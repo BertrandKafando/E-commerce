@@ -97,21 +97,19 @@
       width: 1.3em;
     }
 
-    /*Magnify*/
-    .magnify > .magnify-lens {
-      width: 100px;
-      height: 100px;
-    }
-    collapse navbar-collapse>li a{
-    display:block;
- float:left;   
- width:100px;
- line-height:50px; /*hauteur de l'image de fond*/
- background:black url(images/noir-1.png) repeat-x;
- color:#DCDCDC;
- text-decoration:none;
- text-align:center;
-   }
+    #flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+#flex-container > .flex-item {
+	flex: auto;
+}
+
+#flex-container > .raw-item {
+	width: 5rem;
+}
+
     </style>
 
 </head>
