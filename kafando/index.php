@@ -8,7 +8,8 @@ include_once(dirname(__FILE__).'../includes/header.php');
 
 <body>
 
-    <?php include_once(dirname(__FILE__).'../includes/navbar.php');?> 
+    <?php include_once(dirname(__FILE__).'../includes/navbar.php');
+    include_once(dirname(__FILE__).'/model.php');?> 
     <div class="d-flex flex-nowrap bd-highlight">
    
         <div class="order-1 p-2 bd-highlight" >

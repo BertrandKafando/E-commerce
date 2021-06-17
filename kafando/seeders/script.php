@@ -1,6 +1,6 @@
 <?php
 //augmenter 
-   set_time_limit(3000);
+   set_time_limit(500);
    include_once(dirname(__FILE__).'../../includes/connexion.php');
 
 $file ="products.json"; 
@@ -12,6 +12,7 @@ echo $obj[0]->sku. "<br>";
 echo $obj[0]->name."<br>";
 echo $obj[0]->type."<br>";
 echo $obj[0]->{'category'}[0]->{'id'};
+echo $obj[0]->url."<br>";
 
 foreach($obj[0]->{'category'} as $moi)
 {
@@ -26,16 +27,18 @@ foreach($obj as $product){
         $description=$product->description;
         $price=$product->price;
         $image=$product->image;
-        $sql="INSERT INTO products VALUES(:ref,:name,:description,:price,:image)";
+        $url=$product->url;
+        $sql="INSERT INTO products VALUES(:sku,:name,:description,:price,:image,:url)";
         $stmt=$pdo->prepare($sql);
         $stmt->execute([
-            'ref'=>$ref,
+            'sku'=>$ref,
             'name'=>$name,
             'description'=>$description,
             'price'=>$price,
-            'image'=>$image  
+            'image'=>$image, 
+            'url'=>$url
         ]); 
-
+/*
 foreach($product->{'category'} as $cat)
 {
     $id=$cat->{'id'};
@@ -61,7 +64,7 @@ foreach($product->{'category'} as $cat)
 
 }
 
-        
+ */       
 }
 echo'done';
 ?>

@@ -2,7 +2,7 @@
 <?php
 	try{
 		 		
-	    $stmt = $pdo->prepare("SELECT * FROM products LIMIT 460");
+	    $stmt = $pdo->prepare("SELECT * FROM products LIMIT 100");
 	    $stmt->execute();
 	    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		
