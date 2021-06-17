@@ -1,4 +1,4 @@
-<h4 align="center"> CATEGORY </h4>
+<h4 text-align="center"> CATEGORY </h4>
     <ul class="list-group">
         <?php 
         $i=0;
@@ -8,7 +8,7 @@
                 foreach($stmt as $row){
                     $i++;
                 echo "
-                    <li class='list-group-item d-flex justify-content-between align-items-center'> <a href='category.php?category=".$row['id']."'>".$row['name']."</a> <span class='badge bg-primary rounded-pill'>$i</span> </li> ";                  
+                    <li class='list-group-item d-flex justify-content-between align-items-center'> <a href='category_pro.php?category=".$row['id']."'>".$row['name']."</a> <span class='badge bg-primary rounded-pill'>$i</span> </li> ";                  
                 }
                 }
                 catch(PDOException $e){

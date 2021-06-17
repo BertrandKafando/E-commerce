@@ -101,6 +101,14 @@
 #flex-container > .raw-item {
 	width: 5rem;
 }
+.grid-pivot {
+  width: 25%;
+}
+.grid-pivot {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 30px;
+}
 
     </style>
 

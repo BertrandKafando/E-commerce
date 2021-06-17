@@ -16,13 +16,15 @@ include_once(dirname(__FILE__).'../includes/header.php');
         </div>
 
         <div class="order-2 p-2 bd-highlight">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum dolorem, est voluptatibus rerum fuga praesentium dolorum impedit. Voluptate, quasi?</p>
+          <h3 class="name" align="center">Article Title</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum dolorem, est voluptatibus rerum fuga praesentium dolorum impedit. Voluptate, quasi?</p>
+         <?php include_once(dirname(__FILE__).'../includes/products.php');?>
         </div>
     </div>
 
 </body>
 
-<?php include_once(dirname(__FILE__).'../includes/footer.php');?>
+ <?php include_once(dirname(__FILE__).'../includes/footer.php');?>
 </html>
 
 

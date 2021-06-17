@@ -1,8 +1,11 @@
-
 <?php
+   include_once(dirname(__FILE__).'../includes/header.php');
+   include_once(dirname(__FILE__).'../includes/connexion.php');
+   $id_cat = //
+
 	try{
 		 		
-	    $stmt = $pdo->prepare("SELECT * FROM products LIMIT 460");
+	    $stmt = $pdo->prepare("SELECT c.* FROM products c INNER JOIN productcategory sc ON sc.prod_id = c.sku WHERE sc.cat_id= :id_cat");
 	    $stmt->execute();
 	    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		
@@ -12,9 +15,7 @@
 	}
 ?>
 
-
-
-<div class="row row-cols-1 row-cols-md-4 g-4">
+<div class="row row-cols-1 row-cols-md-5 g-4">
  <?php foreach ($products as $product){?>
   <div class="col">
     <div class="card h-100" >
@@ -28,4 +29,3 @@
   </div>
  <?php };?>
 </div>
-
