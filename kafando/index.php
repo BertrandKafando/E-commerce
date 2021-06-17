@@ -1,8 +1,6 @@
-
 <?php
+include_once(dirname(__FILE__).'../includes/session.php');
 include_once(dirname(__FILE__).'../includes/connexion.php');
-?>
-<?php
 include_once(dirname(__FILE__).'../includes/header.php');
 ?>
 

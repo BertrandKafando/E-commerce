@@ -6,28 +6,13 @@
   	<title>Home</title>
   	<!-- Tell the browser to be responsive to screen width -->
   	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  	<!-- Bootstrap 3.3.7 -->
-  	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-  	<!-- DataTables -->
-    <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
-  	<!-- Font Awesome -->
-  	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-  	<!-- Theme style -->
-  	<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
-  	<!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-  	<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-    <!-- Magnify -->
-    <link rel="stylesheet" href="magnify/magnify.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+     crossorigin="anonymous">
 
-  	<!-- Google Font -->
+  	<!-- boostrap -->
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-
-    <!-- Paypal Express -->
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
-    <!-- Google Recaptcha -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
      crossorigin="anonymous"></script>

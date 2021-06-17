@@ -38,7 +38,7 @@ foreach($obj as $product){
             'image'=>$image, 
             'url'=>$url
         ]); 
-/*
+
 foreach($product->{'category'} as $cat)
 {
     $id=$cat->{'id'};
@@ -64,7 +64,7 @@ foreach($product->{'category'} as $cat)
 
 }
 
- */       
+     
 }
 echo'done';
 ?>

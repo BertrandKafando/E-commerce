@@ -23,6 +23,7 @@
          <h5 class="card-title"><?php echo $product['name'];?></h5>
          <h5 class="card-title"><?php echo $product['price'];?></h5>
          <p class="card-text"><?php echo $product['description']; ?></p>
+         <a href="./panier/add_cart.php?id=1&quantité=2" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
   </div>
