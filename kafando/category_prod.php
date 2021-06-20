@@ -11,7 +11,7 @@
    
 	try{
 		 		
-	    $stmt = $pdo->prepare("SELECT c.* FROM products c INNER JOIN productcategory sc ON sc.prod_id = c.sku WHERE sc.cat_id='{$id_cat}'");
+	    $stmt = $pdo->prepare("SELECT c.* FROM products c INNER JOIN productcategory sc ON sc.prod_id = c.sku WHERE sc.cat_id='{$id_cat}' ORDER BY price");
 	    $stmt->execute();
 	    $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		

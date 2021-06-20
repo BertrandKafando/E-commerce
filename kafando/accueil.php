@@ -15,7 +15,7 @@
     <h1 class="box-logo box-title"><a href="index.php">E-commerce.com</a></h1>
     <h1>Bienvenue <?php echo $_SESSION['username']; ?>!</h1>
     <p>C'est votre tableau de bord.</p>
-    <a href="logout.php">Déconnexion</a>Bertrakafgs
+    <a href="deconnexion.php">Déconnexion</a>Bertrakafgs
    </div>
    <br>
   <?php include_once(dirname(__FILE__).'../includes/footer.php');?>

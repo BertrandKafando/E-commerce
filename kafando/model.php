@@ -24,5 +24,45 @@
 	}
 
  }
+ function produit_sans_ordre(){
+    try {
+        $pdo = new PDO('mysql:host=localhost;dbname=boutique', 'root', '');
+    } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage() . "<br/>";
+        die();
+    }
+    try{
+		 		
+	    $stmt = $pdo->prepare("SELECT * FROM products LIMIT 100");
+	    $stmt->execute();
+	  return  $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+	}
+	catch(PDOException $e){
+		echo "There is some problem in connection: " . $e->getMessage();
+	}
+ }
+
+
+ function produit_avec_ordre(){
+    try {
+        $pdo = new PDO('mysql:host=localhost;dbname=boutique', 'root', '');
+    } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage() . "<br/>";
+        die();
+    }
+ 
+    try{
+		 		
+	    $stmt = $pdo->prepare("SELECT * FROM products ORDER BY price LIMIT 100");
+	    $stmt->execute();
+	 return   $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		
+	}
+	catch(PDOException $e){
+		echo "There is some problem in connection: " . $e->getMessage();
+	}
+}
+ 
 ?>
 

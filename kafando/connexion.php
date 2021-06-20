@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
- 
-</head>
-<body>
 <?php
 include_once(dirname(__FILE__).'../includes/header.php');
 include_once(dirname(__FILE__).'/config.php');
@@ -49,7 +43,4 @@ if (isset($_POST['username'])){
     <p class="alert alert-danger"><?php echo $message; ?></p>
 <?php } ?>
 </form>
-</body>
 <?php include_once(dirname(__FILE__).'../includes/footer.php');?>
-</html>
-

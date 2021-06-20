@@ -1,5 +1,6 @@
 
 <?php
+session_start();
   include_once(dirname(__FILE__).'../includes/header.php');
   include_once(dirname(__FILE__).'../includes/navbar.php');
 include_once(dirname(__FILE__).'/config.php');
